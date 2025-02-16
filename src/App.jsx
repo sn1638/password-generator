@@ -32,9 +32,9 @@ function App() {
     <>
     <div className='flex justify-center items-center h-screen'>
     <div className="bg-gray-400 w-2xl h-36 text-amber-900 rounded-lg">
-      <div>
-        <input type='text' value={password} className=' p-1.5 rounded-lg h-10 bg-white m-2 w-lg'readOnly />
-        <button  onClick={copypasswordToClipboard} className='cursor-pointer bg-blue-400 h-10 w-16 rounded-lg'>copy</button>
+      <div className='w-[100%]'>
+        <input type='text' value={password} className=' p-1.5 rounded-lg h-10 bg-white m-2 w-[80%]'readOnly />
+        <button  onClick={copypasswordToClipboard} className='cursor-pointer bg-blue-400 h-10 w-[15%] rounded-lg'>copy</button>
       </div>
         <div>
           <input type='range' min='4' max='50' value={length} className=' cursor-pointer mr-2 ml-2' onChange={(e)=>{setLength(e.target.value)
